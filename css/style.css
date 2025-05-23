@@ -1,0 +1,233 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/**color usado verde #258825*/
+body {
+    font-family: "Open Sans", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+/*!-----header-----*/
+
+header {
+    position: sticky;
+    top: 0;
+}
+
+header nav {
+    background-color: #258825;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0vh 1vh 0vh 1vh;
+    border-radius: 10px;
+}
+
+header nav a {
+    width: 5%;
+    padding: 10px 40px 10px 20px;
+}
+
+nav img {
+    border-radius: 50%;
+    width: 100%;
+}
+
+header nav ul {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+header nav ul li {
+    list-style: none;
+    margin: 1vh;
+    padding: 0.5vh;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: #258825;
+    background-color: #ffffffef;
+    font-size: 2.5vh;
+    font-weight: 600;
+    border: 0.5px solid #258825;
+    border-radius: 14px;
+    padding: 1.2vh;
+    margin: 2vh 2vh;
+}
+
+header nav ul li a:hover {
+    text-decoration: underline;
+    color: #62c062d7;
+    background-color: #ffffffef;
+    font-size: 2.5vh;
+    font-weight: 600;
+    border: 0.5px solid #258825;
+    border-radius: 14px;
+    padding: 1.2vh;
+    margin: 2vh 2vh;
+}
+
+/*!-----main-----*/
+
+main {
+    text-align: center;
+}
+
+h1 {
+    color: #258825;
+    text-align: center;
+    font-size: 10vh;
+    font-weight: 400;
+    margin-top: 5vh;
+}
+
+.hero p {
+    color: black;
+    font-size: 4vh;
+    font-weight: 500;
+    margin: 9vh;
+    text-align: center;
+}
+
+.descripcion p {
+    color: #161515fb;
+    font-size: 2.5vh;
+    font-weight: 400;
+    margin: 3% 8% 3% 8%;
+    text-align: center;
+}
+
+main section h2 {
+    color: #161515fb;
+    font-size: 4vh;
+    font-weight: 500;
+}
+
+main section p {
+    font-size: 2.3vh;
+    margin: 5px;
+    color: rgb(85, 83, 83);
+}
+
+main section a {
+    font-weight: 700;
+    font-size: 1.8vh;
+    color: #258825;
+}
+
+main section a:hover {
+    font-weight: 700;
+    font-size: 1.8vh;
+    color: white;
+    background-color: #258825;
+    border-radius: 14px;
+}
+
+main section img {
+    width: 40%;
+    border-radius: 20px;
+    padding: 1vh;
+    margin: 3vh;
+}
+
+.mensual {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 8%;
+    margin-top: 5%;
+}
+
+.mensual img {
+    width: 30%;
+    height: 250px;
+}
+
+.mensual div {
+    width: 40%;
+    text-align: justify;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.mensual p {
+    padding: 1vh;
+}
+
+.campaña {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 8%;
+}
+
+.campaña img {
+    width: 30%;
+    height: 250px;
+}
+
+.campaña div {
+    display: flex;
+    width: 40%;
+    text-align: justify;
+    flex-direction: column;
+    align-items: center;
+}
+
+.campaña p {
+    padding: 1vh;
+}
+
+.historia {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 8%;
+}
+
+.historia img {
+    width: 30%;
+    height: 250px;
+}
+
+.historia div {
+    display: flex;
+    width: 40%;
+    text-align: justify;
+    flex-direction: column;
+    align-items: center;
+}
+
+.historia p {
+    padding: 1vh;
+}
+
+/*!-----footer-----*/
+
+footer {
+    background-color: #258825;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2vh;
+}
+
+footer a img {
+    width: 32px;
+    padding: 1vh;
+}
+
+footer p {
+    color: #faebd7;
+    font-size: 2.5vh;
+    font-weight: 600;
+    padding: 2vh;
+}
