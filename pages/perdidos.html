@@ -1,33 +1,161 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head><!-- Configuración metadata del doc-->
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="../css/style.css">
-        <title>Registro Nacional de Perros Perdidos</title>
-        <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
-    </head>
-    <body><!-- Cuerpo-->
-        <header><!-- Encabezado-->
-            <nav> <!-- Barra de navegación-->
-                <a href="../index.html"><img src="../img/logo 1.jpg" alt="logo"></a><!-- src va fuente de la img y en alt descripción-->
-                <ul> <!--atajo emmet ul>li*5>a -->
-                    <li><a href="../index.html">Inicio</a></li> <!-- ./ para entrar a la carpeta ../para salir de la capeta-->
-                    <li><a href="./perdidos.html">Perdidos</a></li>
-                    <li><a href="./encontrados.html">Encontrados</a></li>
-                    <li><a href="./adopcion.html">En adopción</a></li>
-                    <li><a href="./colabora.html">Colaborá con nosotros</a></li>
-                </ul>
-            </nav>
-        </header>
+
+<head><!-- Configuración metadata del doc-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/style.css">
+    <title>Registro Nacional de Perros Perdidos</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <a class="a-logo" href="../index.html"><img class="img-logo" src="../img/logo.avif" alt="logo"></a>
+            <ul>
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="./perdidos.html">Perdidos</a></li>
+                <li><a href="./encontrados.html">Encontrados</a></li>
+                <li><a href="./publicar.html">Publicá</a></li>
+                <li><a href="./colabora.html">Colaborá con nosotros</a></li>
+            </ul>
+        </nav>
+    </header>
     <main>
-        <p>En esta sección se encontraran publicados avisos de busqueda de perros perdidos por parte de sus dueños, con una imagen de cada uno y distintos filtros (raza, color, zona de busqueda, característica distintiva)</p>
+        <h1>Perros perdidos</h1>
+        <h2>¡Ayudá a sus dueños a encontrarlos!</h2>
+        <section class="galeria"> <!--Tarjetas de bootstrap, distribuidas con grid-->
+            <div class="card" style="width: 18rem;">
+                <img class="card-img-top" src="../img/max.jpg" alt="Max">
+                <div class="card-body">
+                    <h5 class="card-title">Max</h5>
+                    <p class="card-text">Tamaño mediano, nariz marrón y rosada. Se perdió el 15/05.</p>
+                    <p class="card-text">Ubicación: Godoy Cruz, Mendoza</p>
+                    <a href="#" class="btn btn-primary">Ver</a>
+                </div>
+            </div>
+            <div class="card" style="width: 18rem;">
+                <img class="card-img-top" src="../img/rufo.jpg" alt="Rufo">
+                <div class="card-body">
+                    <h5 class="card-tittle">Rufo</h5>
+                    <p class="card-text">Boxer perdido, necesita su medicación diaria. Patas delanteras color blanco.
+                    </p>
+                    <p class="card-text">Ubicación: Palermo, CABA</p>
+                    <a href="" class="btn btn-primary">Ver</a>
+                </div>
+            </div>
+            <div class="card" style="width: 18rem;">
+                <img class="card-img-top" src="../img/luna.jpg" alt="Luna">
+                <div class="card-body">
+                    <h5 class="card-tittle">Luna</h5>
+                    <p class="card-text">Luna se peridó el 10/05, es negra y lleva un collar rosado.</p>
+                    <p class="card-text">Ubicación: Trelew, Chubut</p>
+                    <a href="" class="btn btn-primary">Ver</a>
+                </div>
+            </div>
+            <div class="card" style="width: 18rem;">
+                <img class="card-img-top" src="../img/rocky.png" alt="Rocky">
+                <div class="card-body">
+                    <h5 class="card-tittle">Rocky</h5>
+                    <p class="card-text">Tiene tres manchas marrones en el lomo. Tamaño pequeño, es asustadizo.</p>
+                    <p class="card-text">Ubicación: Bahía Blanca, Bs. As.</p>
+                    <a href="" class="btn btn-primary">Ver</a>
+                </div>
+            </div>
+            <div class="card" style="width: 18rem;">
+                <img class="card-img-top" src="../img/bella.jpg" alt="Bella">
+                <div class="card-body">
+                    <h5 class="card-tittle">Bella</h5>
+                    <p class="card-text">Se escapó de la peluqería, por lo que no lleva puesto el collar de la foto.
+                        Tamaño muy pequeño.</p>
+                    <p class="card-text">Ubicación: Carlos Paz, Córdoba</p>
+                    <a href="" class="btn btn-primary">Ver</a>
+                </div>
+            </div>
+            <div class="card" style="width: 18rem;">
+                <img class="card-img-top" src="../img/toby.jpg" alt="Toby">
+                <div class="card-body">
+                    <h5 class="card-tittle">Toby</h5>
+                    <p class="card-text">Nos robaron a Toby el 18/05, ofrecemos recompensa! Es un miembro más de la
+                        familia.</p>
+                    <p class="card-text">Ubicación: Casilda, Santa Fé</p>
+                    <a href="" class="btn btn-primary">Ver</a>
+                </div>
+            </div>
+            <div class="card" style="width: 18rem;">
+                <img class="card-img-top" src="../img/bruno.jpg" alt="Bruno">
+                <div class="card-body">
+                    <h5 class="card-tittle">Bruno</h5>
+                    <p class="card-text">Se perdío en la playa Bahía Bonita, lleva puesto chaleco azul.</p>
+                    <p class="card-text">Ubicación: Mar del Plata, Bs. As.</p>
+                    <a href="" class="btn btn-primary">Ver</a>
+                </div>
+            </div>
+            <div class="card" style="width: 18rem;">
+                <img class="card-img-top" src="../img/kira.jpg" alt="Kira">
+                <div class="card-body">
+                    <h5 class="card-tittle">Kira</h5>
+                    <p class="card-text">Perrita blanca tipo caniche, cola cortada.</p>
+                    <p class="card-text">Ubicación: El Dorado, Misiones</p>
+                    <a href="" class="btn btn-primary">Ver</a>
+                </div>
+            </div>
+            <div class="card" style="width: 18rem;">
+                <img class="card-img-top" src="../img/lola.jpg" alt="Lola">
+                <div class="card-body">
+                    <h5 class="card-tittle">Lola</h5>
+                    <p class="card-text">Lola se escapó en la zona de Parque Rivadavia. Pecho blanco, tamaño grande</p>
+                    <p class="card-text">Ubicación: Caballito, CABA</p>
+                    <a href="" class="btn btn-primary">Ver</a>
+                </div>
+            </div>
+            <div class="card" style="width: 18rem;">
+                <img class="card-img-top" src="../img/thor.jpg" alt="Thor">
+                <div class="card-body">
+                    <h5 class="card-tittle">Thor</h5>
+                    <p class="card-text">Dogo mallorquín marrón, lleva puesto el arnés de la foto. Lo extrañamos mucho!
+                    </p>
+                    <p class="card-text">Ubicación: Choele Choel, Río Negro</p>
+                    <a href="" class="btn btn-primary">Ver</a>
+                </div>
+            </div>
+            <div class="card" style="width: 18rem;">
+                <img class="card-img-top" src="../img/nala.jpg" alt="Nala">
+                <div class="card-body">
+                    <h5 class="card-tittle">Nala</h5>
+                    <p class="card-text">Nala se perdió el 21/05 en los alrededores de Parque Lezama, blanca y marrón,
+                        tamaño mediano.</p>
+                    <p class="card-text">Ubicación: San Telmo, CABA</p>
+                    <a href="" class="btn btn-primary">Ver</a>
+                </div>
+            </div>
+            <div class="card" style="width: 18rem;">
+                <img class="card-img-top" src="../img/canela.jpg" alt="Canela">
+                <div class="card-body">
+                    <h5 class="card-tittle">Canela</h5>
+                    <p class="card-text">Chihuahua marrón clarito, castrada. Está muy viejita, necesita su hogar</p>
+                    <p class="card-text">Ubicación: Junín, Bs. As.</p>
+                    <a href="" class="btn btn-primary">Ver</a>
+                </div>
+            </div>
+        </section>
     </main>
     <footer>
-        <p>¡Seguinos! Tu difusión marca la diferencia</p>
-        <a href="https://www.instagram.com/" target="_blank"><img src="../img/instagram (2).png" alt="instagram"></a>
-        <a href="https://x.com/" target="_blank"><img src="../img/twitter.png" alt="x"></a>
-        <a href="https://www.facebook.com/" target="_blank"><img src="../img/facebook (2).png" alt="facebook"></a>
+        <p>© 2025 Seguinos en nuestras redes sociales</p>
+        <div>
+            <a href="https://www.instagram.com/" target="_blank"><img src="../img/instagram.png" alt="instagram"></a>
+            <a href="https://x.com/" target="_blank"><img src="../img/twitter.png" alt="x"></a>
+            <a href="https://www.facebook.com/" target="_blank"><img src="../img/facebook.png" alt="facebook"></a>
+        </div>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO"
+        crossorigin="anonymous"></script>
 </body>
+
 </html>
