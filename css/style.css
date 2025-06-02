@@ -33,7 +33,6 @@ header nav {
     align-items: center;
     position: relative;
     padding: 0vh 1vh 0vh 1vh;
-
 }
 
 @media (max-width: 1050px) {
@@ -139,7 +138,7 @@ main h1 {
     text-align: center;
     font-size: 10vh;
     font-weight: 400;
-    margin-top: 5vh;
+    margin: 5vh 2vh 0vh 2vh;
 }
 
 main h2,
@@ -147,7 +146,7 @@ main h2,
     color: black;
     font-size: 4vh;
     font-weight: 500;
-    margin: 4vh 1vh 7vh;
+    margin: 4vh 2vh 7vh;
     text-align: center;
 }
 
@@ -159,47 +158,86 @@ main h2,
     text-align: center;
 }
 
-@media (max-width: 900px) {
-
-    .hero p,
-    .descripcion p {
-        font-size: 3vh;
-        font-size: 2.2vh;
-        margin-left: 5%;
-        margin-right: 5%;
-    }
-}
-
-@media (max-width: 1070px) {
-    main h1 {
-        font-size: 6vh;
-    }
-
-    main h2 {
-        font-size: 3vh;
-    }
-}
-
-@media (max-width: 550px) {
-    main h1 {
-        font-size: 4vh;
-    }
-
-    main h2 {
-        font-size: 3vh;
-    }
-}
-
 main section h3 {
     color: #161515fb;
     font-size: 4vh;
     font-weight: 500;
 }
 
+@media (max-width: 1100px) {
+    main h1 {
+        font-size: 6vh;
+    }
+
+    .hero p,
+    main h2,
+    main section h3 {
+        font-size: 3vh;
+    }
+
+    .descripcion p {
+        font-size: 2.4vh;
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+
+}
+
+@media (max-width: 960px) {
+    .hero p {
+        font-size: 2.5vh;
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+
+    .descripcion p {
+        font-size: 2.2vh;
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+}
+
+@media (max-width: 650px) {
+    main h1 {
+        font-size: 4vh;
+    }
+
+    .hero p {
+        font-size: 2.2vh;
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+
+    .descripcion p {
+        font-size: 2vh;
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+}
+
+@media (max-width: 450px) {
+
+    .hero p,
+    .descripcion p {
+        text-align: justify;
+    }
+
+    main section h3 {
+        font-size: 2.8vh;
+    }
+}
+
 main section p {
     font-size: 2.3vh;
     margin: 5px;
     color: rgb(85, 83, 83);
+}
+
+@media (max-width: 1100px) {
+    main section p {
+        font-size: 2vh;
+        margin: 4px;
+    }
 }
 
 main section a {
@@ -216,6 +254,7 @@ main section a:hover {
     border-radius: 14px;
 }
 
+
 .img-articulo {
     width: 30%;
     height: 250px;
@@ -224,7 +263,8 @@ main section a:hover {
     margin: 3vh;
 }
 
-.mensual {
+.mensual,
+.historia {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -232,16 +272,13 @@ main section a:hover {
     margin-top: 5%;
 }
 
-.mensual div {
+.mensual div,
+.historia div {
+    display: flex;
     width: 40%;
     text-align: justify;
-    display: flex;
     flex-direction: column;
     align-items: center;
-}
-
-.mensual p {
-    padding: 1vh;
 }
 
 .campaña {
@@ -260,26 +297,8 @@ main section a:hover {
     align-items: center;
 }
 
-.campaña p {
-    padding: 1vh;
-}
-
-.historia {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    margin-bottom: 8%;
-}
-
-.historia div {
-    display: flex;
-    width: 40%;
-    text-align: justify;
-    flex-direction: column;
-    align-items: center;
-}
-
+.mensual p,
+.campaña p,
 .historia p {
     padding: 1vh;
 }
@@ -312,6 +331,7 @@ main section a:hover {
 .galeria {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    grid-template-rows: 1fr;
     gap: 2rem;
     padding: 2rem;
 }
@@ -321,8 +341,12 @@ main section a:hover {
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
-        gap: 1rem;
+        gap: 2rem;
     }
+}
+
+.card {
+    position: relative;
 }
 
 .card-img-top {
@@ -345,18 +369,15 @@ main section a:hover {
     font-size: 12px;
 }
 
-.card {
-    position: relative;
-}
-
 .galeria .card .btn {
     position: absolute;
-    bottom: 15px;
+    bottom: 12px;
     left: 50%;
     transform: translateX(-50%);
 }
 
-.btn-primary {
+.card-body .btn-primary,
+.mb-3 .btn-primary {
     /*del inspeccionador (propiedades que estaba aplicando bootstrap al color del boton)*/
     --bs-btn-color: #fff;
     --bs-btn-bg: #9c652b;
@@ -374,11 +395,6 @@ main section a:hover {
     --bs-btn-disabled-border-color: #b77936;
 }
 
-.form-check-input.is-invalid,
-.was-validated .form-check-input:invalid {
-    border-color: black
-}
-
 /*?--------formulario para publicar--------*/
 
 .formularios {
@@ -394,6 +410,12 @@ main section a:hover {
     background-color: #f8f9fa;
     border-radius: 10px;
     box-shadow: 0 4px 10px rgba(115, 64, 20, 0.181);
+}
+
+/*Para modificar propiedades de Bootstrap*/
+.form-check-input.is-invalid,
+.was-validated .form-check-input:invalid {
+    border-color: black
 }
 
 .form-check-input.is-invalid~.form-check-label,
@@ -418,9 +440,11 @@ main section a:hover {
 }
 
 
+/*?------Página Colaborá------*/
+
 .mensaje-colabora p {
     font-size: 2.5vh;
-    margin: 3vh 6vh;
+    margin: 2.5vh 6vh;
     padding: 2vh 4vh;
     text-align: center;
 }
@@ -433,6 +457,12 @@ main section a:hover {
     }
 }
 
+@media (max-width: 850px) {
+    .mensaje-colabora p {
+        text-align: justify;
+    }
+}
+
 .donaciones h2 {
     font-size: 5vh;
     color: #8f591f;
@@ -442,7 +472,12 @@ main section a:hover {
     .donaciones h2 {
         font-size: 3vh;
     }
+
+    .donaciones p {
+        margin: 2vh;
+    }
 }
+
 
 .donaciones ul li {
     list-style: none;
