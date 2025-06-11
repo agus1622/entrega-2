@@ -1,0 +1,23 @@
+footer{
+    background: #7C5333;
+    background: linear-gradient(179deg, rgba(124, 83, 51, 1) 0%, rgba(180, 139, 98, 1) 50%, rgb(221, 177, 123) 100%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2vh 3vh;
+    p{
+        color: #faebd7;
+        font-size: 2.5vh;
+        font-weight: 600;
+        padding-top: 2vh;
+        padding-left: 2vh;
+    }
+    div{
+        a{
+            img{
+                width: 2.8em;
+                padding: 1vh;
+            }
+        }
+    }
+}
