@@ -16,8 +16,7 @@
     }
 
     .hero p,
-    main h2,
-    main section h3 {
+    main h2 {
         font-size: 3vh;
     }
 
@@ -70,9 +69,6 @@
         text-align: justify;
     }
 
-    main section h3 {
-        font-size: 2.8vh;
-    }
 }
 
 @media (max-width: 1100px) {
@@ -126,7 +122,7 @@
 
 @media (max-width: 850px) {
     .mensaje-colabora p {
-        font-size: 2vh;
+        font-size: 2.5vh;
         margin: 2vh 4vh;
         padding: 1.5vh 2vh;
     }
@@ -143,8 +139,10 @@
         font-size: 3vh;
     }
 
-    .donaciones p {
+    .donaciones p,
+    .donaciones ul {
         margin: 2vh;
+        text-align: center;
     }
 }
 
@@ -153,15 +151,15 @@
         padding: 1vh 1.5vh;
     }
 
-    footer a img {
-        width: 2.2em;
-        padding: 1vh
-    }
-
     footer p {
         font-size: 2vh;
         padding-top: 1vh;
         padding-left: 1vh;
+    }
+
+    footer a img {
+        width: 2.2em;
+        padding: 1vh
     }
 }
 
@@ -170,14 +168,14 @@
         padding: 0.7vh 1.2vh;
     }
 
-    footer a img {
-        width: 2em;
-        padding: 0.7vh
-    }
-
     footer p {
         font-size: 2vh;
         padding-top: 0.7vh;
         padding-left: 0.7vh;
+    }
+
+    footer a img {
+        width: 2em;
+        padding: 0.7vh
     }
 }

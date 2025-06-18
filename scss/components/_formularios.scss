@@ -1,0 +1,84 @@
+.formularios {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    .was-validated {
+        font-family: "Open Sans", sans-serif;
+        max-width: 450px;
+        margin: 50px auto;
+        padding: 20px;
+        background-color: $color-enlaces;
+        border: solid $color-principal 1px;
+        border-radius: 10px;
+        box-shadow: 0 4px 10px $color-principal;
+
+        .btn {
+            display: block;
+            margin: 0 auto;
+            margin-top: 1rem;
+            position: relative;
+            bottom: -10px;
+        }
+    }
+
+    .img-logo2 {
+        width: 70px;
+        height: 70px;
+        border-radius: 50%;
+        transition: 2s;
+        transform: translateY(400px);
+    }
+}
+
+@keyframes rebote {
+
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+
+    25% {
+        transform: translateY(-40px);
+    }
+
+    50% {
+        transform: translateY(0);
+    }
+
+    75% {
+        transform: translateY(-20px);
+    }
+}
+
+.rebota {
+    animation: rebote 2s ease forwards;
+    animation-iteration-count: 2
+}
+
+//*para pisar propiedades Bootstrap(inspeccionador)
+.form-check-input.is-invalid,
+.was-validated .form-check-input:invalid {
+    border-color: $color-secundario;
+}
+
+.form-check-input.is-invalid~.form-check-label,
+.was-validated .form-check-input:invalid~.form-check-label {
+    color: $color-principal;
+}
+
+.form-control.is-invalid,
+.was-validated .form-control:invalid {
+    border-color: $color-principal3;
+}
+
+.form-control.is-invalid:focus,
+.was-validated .form-control:invalid:focus {
+    border-color: $color-principal;
+    box-shadow: none;
+}
+
+.invalid-feedback {
+    color: rgba(169, 53, 53, 0.898);
+    font-style: italic;
+}

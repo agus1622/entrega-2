@@ -2,50 +2,65 @@ header {
     top: 0;
 }
 
-.navbar {
-    background: #7C5333;
-    background: linear-gradient(179deg, rgba(124, 83, 51, 1) 0%, rgba(180, 139, 98, 1) 50%, rgba(216, 181, 138, 1) 100%);
+nav {
+    background: $gradiente;
     padding: 1.5vh;
-}
 
-.img-logo {
-    width: 4rem;
-    border-radius: 50%;
-}
+    div {
+        a {
+            img {
+                width: 4rem;
+                border-radius: 50%;
+            }
+        }
 
-.navbar-toggler {
-    color: #f3f4f5;
-    background-color: transparent;
-    border: solid white 2px;
+        button {
+            color: $color-enlaces;
+            background-color: transparent;
+            border: solid white 2px;
+            padding: 1vh;
 
-    &:focus {
-        border: solid white 2px;
+            &:focus {
+                border: solid white 2px;
+            }
+        }
+
+
+        div {
+            ul {
+                li {
+                    a {
+                        color: $color-enlaces;
+                        font-size: 1.2rem;
+                        font-weight: nth($font-weight, 1);
+                        margin: 2vh;
+                        margin-left: 3vh;
+                        padding: 1vh;
+                        transition: all 0.13s ease-in-out !important;
+
+                        &:hover,
+                        &:focus {
+                            font-weight: nth($font-weight, 2);
+                            text-shadow: 0 0 5px #fff, 0 0 10px #fff;
+                        }
+                    }
+                }
+            }
+        }
     }
 }
+
+
 
 .navbar-collapse.show {
-    background: #7C5333;
-    background: linear-gradient(179deg, rgba(124, 83, 51, 1) 0%, rgba(180, 139, 98, 1) 50%, rgb(221, 184, 138) 100%);
+    background: $gradiente;
     border-radius: 10px;
-}
-
-.navbar-nav .nav-link {
-    color: white;
-    font-size: 1.2rem;
-    font-weight: 250 !important;
-    margin: 2vh;
-    margin-left: 3vh;
-    transition: all 0.12s ease-in-out !important;
-
-    &:hover:focus {
-        font-weight: 400;
-        border: solid white 1px;
-        border-radius: 6px;
-    }
 }
 
 .navbar-nav .nav-link.active,
 .navbar-nav .nav-link.show {
-    color: white (--bs-navbar-active-color);
-    font-weight: 250;
+    color: $color-enlaces (
+        --bs-navbar-active-color
+    );
+font-weight: nth($font-weight, 1);
 }

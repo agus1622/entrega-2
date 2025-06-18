@@ -5,7 +5,8 @@
   box-sizing: border-box;
 }
 
-html, body {
+html,
+body {
   font-family: "Open Sans", sans-serif;
   font-weight: 400;
   font-style: normal;
@@ -20,43 +21,39 @@ header {
 }
 
 .navbar {
-  background: #7C5333;
-  background: linear-gradient(179deg, rgb(124, 83, 51) 0%, rgb(180, 139, 98) 50%, rgb(216, 181, 138) 100%);
+  background: linear-gradient(179deg, rgb(124, 83, 51) 0%, rgb(180, 139, 98) 50%, rgb(221, 177, 123) 100%);
   padding: 1.5vh;
 }
-
-.img-logo {
+.navbar div a .img-logo {
   width: 4rem;
   border-radius: 50%;
 }
-
-.navbar-toggler {
-  color: #f3f4f5;
+.navbar div .navbar-toggler {
+  color: white;
   background-color: transparent;
   border: solid white 2px;
+  padding: 1vh;
 }
-.navbar-toggler:focus {
+.navbar div .navbar-toggler:focus {
   border: solid white 2px;
+}
+.navbar div div ul li .nav-link {
+  color: white;
+  font-size: 1.2rem;
+  font-weight: 250;
+  margin: 2vh;
+  margin-left: 3vh;
+  padding: 1vh;
+  transition: all 0.13s ease-in-out !important;
+}
+.navbar div div ul li .nav-link:hover, .navbar div div ul li .nav-link:focus {
+  font-weight: 400;
+  text-shadow: 0 0 5px #fff, 0 0 10px #fff;
 }
 
 .navbar-collapse.show {
-  background: #7C5333;
-  background: linear-gradient(179deg, rgb(124, 83, 51) 0%, rgb(180, 139, 98) 50%, rgb(221, 184, 138) 100%);
+  background: linear-gradient(179deg, rgb(124, 83, 51) 0%, rgb(180, 139, 98) 50%, rgb(221, 177, 123) 100%);
   border-radius: 10px;
-}
-
-.navbar-nav .nav-link {
-  color: white;
-  font-size: 1.2rem;
-  font-weight: 250 !important;
-  margin: 2vh;
-  margin-left: 3vh;
-  transition: all 0.12s ease-in-out !important;
-}
-.navbar-nav .nav-link:hover:focus {
-  font-weight: 400;
-  border: solid white 1px;
-  border-radius: 6px;
 }
 
 .navbar-nav .nav-link.active,
@@ -73,15 +70,9 @@ h1 {
   margin: 7vh 2vh 5vh 2vh;
 }
 
-.hero p {
-  color: black;
-  font-size: 4vh;
-  font-weight: 500;
-  text-align: center;
-}
-
+.hero,
 h2 {
-  color: black;
+  color: rgba(22, 21, 21, 0.9843137255);
   font-size: 4vh;
   font-weight: 500;
   text-align: center;
@@ -103,6 +94,15 @@ h2 {
   text-align: center;
 }
 
+.mensual div,
+.campaña div,
+.historia div {
+  display: flex;
+  width: 40%;
+  text-align: justify;
+  flex-direction: column;
+  align-items: center;
+}
 .mensual div h3,
 .campaña div h3,
 .historia div h3 {
@@ -124,6 +124,7 @@ h2 {
   font-weight: 700;
   font-size: 1.8vh;
   color: #7C5333;
+  padding: 1vh;
   transition: all 0.3s ease;
 }
 .mensual div a:hover,
@@ -136,19 +137,13 @@ h2 {
   border-radius: 14px;
 }
 
-.mensual {
+.mensual,
+.historia {
   display: flex;
   align-items: center;
   justify-content: center;
   margin-bottom: 8%;
   margin-top: 5%;
-}
-.mensual div {
-  display: flex;
-  width: 40%;
-  text-align: justify;
-  flex-direction: column;
-  align-items: center;
 }
 
 .campaña {
@@ -158,28 +153,6 @@ h2 {
   justify-content: center;
   margin-bottom: 8%;
 }
-.campaña div {
-  display: flex;
-  width: 40%;
-  text-align: justify;
-  flex-direction: column;
-  align-items: center;
-}
-
-.historia {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-bottom: 8%;
-  margin-top: 5%;
-}
-.historia div {
-  display: flex;
-  width: 40%;
-  text-align: justify;
-  flex-direction: column;
-  align-items: center;
-}
 
 .img-articulo {
   width: 30%;
@@ -187,6 +160,31 @@ h2 {
   border-radius: 20px;
   padding: 1vh;
   margin: 3vh;
+}
+
+.mensaje-colabora p {
+  font-size: 2.5vh;
+  margin: 2.5vh 6vh;
+  padding: 2vh 4vh;
+  text-align: center;
+}
+
+.donaciones {
+  text-align: center;
+}
+.donaciones h2 {
+  font-size: 5vh;
+  color: #7C5333;
+}
+.donaciones p {
+  font-size: 2.5vh;
+  margin: 2.5vh 6vh;
+  padding: 2vh 4vh;
+  text-align: center;
+}
+.donaciones ul li {
+  list-style: none;
+  text-align: center;
 }
 
 .galeria {
@@ -203,28 +201,24 @@ h2 {
   width: 100%;
   max-width: 14rem;
 }
-
-.card-img-top {
+.card .card-img-top {
   width: 100%;
   height: 50%;
   padding: 10px;
   border-radius: 14px;
   transition: transform 0.3s ease;
 }
-
-.card-img-top:hover {
+.card .card-img-top:hover {
   transform: scale(1.2);
 }
 
 .card-body {
   text-align: center;
 }
-
-.card-text {
+.card-body .card-text {
   font-size: 12px;
 }
-
-.card-body .mb-3 .btn-primary {
+.card-body .btn-primary {
   position: absolute;
   bottom: 12px;
   left: 50%;
@@ -252,30 +246,56 @@ h2 {
 
 .formularios {
   display: flex;
-  flex-direction: row !important;
+  flex-direction: row;
   align-items: center;
 }
-
-.was-validated {
+.formularios .was-validated {
   font-family: "Open Sans", sans-serif;
-  max-width: 400px;
+  max-width: 450px;
   margin: 50px auto;
   padding: 20px;
-  background-color: #f8f9fa;
+  background-color: white;
   border: solid #7C5333 1px;
   border-radius: 10px;
-  box-shadow: 0 4px 10px rgba(115, 64, 20, 0.181);
+  box-shadow: 0 4px 10px #7C5333;
 }
-
-.img-logo2 {
+.formularios .was-validated .btn {
+  display: block;
+  margin: 0 auto;
+  margin-top: 1rem;
+  position: relative;
+  bottom: -10px;
+}
+.formularios .img-logo2 {
   width: 70px;
   height: 70px;
   border-radius: 50%;
+  transition: 2s;
+  transform: translateY(400px);
+}
+
+@keyframes rebote {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  25% {
+    transform: translateY(-40px);
+  }
+  50% {
+    transform: translateY(0);
+  }
+  75% {
+    transform: translateY(-20px);
+  }
+}
+.rebota {
+  animation: rebote 2s ease forwards;
+  animation-iteration-count: 2;
 }
 
 .form-check-input.is-invalid,
 .was-validated .form-check-input:invalid {
-  border-color: black;
+  border-color: rgba(22, 21, 21, 0.9843137255);
 }
 
 .form-check-input.is-invalid ~ .form-check-label,
@@ -299,28 +319,6 @@ h2 {
   font-style: italic;
 }
 
-.mensaje-colabora p {
-  font-size: 2.5vh;
-  margin: 2.5vh 6vh;
-  padding: 2vh 4vh;
-  text-align: center;
-}
-
-.donaciones h2 {
-  font-size: 5vh;
-  color: #7C5333;
-}
-.donaciones p {
-  font-size: 2.5vh;
-  margin: 2.5vh 6vh;
-  padding: 2vh 4vh;
-  text-align: center;
-}
-.donaciones ul li {
-  list-style: none;
-  text-align: center;
-}
-
 footer {
   background: #7C5333;
   background: linear-gradient(179deg, rgb(124, 83, 51) 0%, rgb(180, 139, 98) 50%, rgb(221, 177, 123) 100%);
@@ -330,7 +328,7 @@ footer {
   padding: 2vh 3vh;
 }
 footer p {
-  color: #faebd7;
+  color: white;
   font-size: 2.5vh;
   font-weight: 600;
   padding-top: 2vh;
@@ -356,8 +354,7 @@ footer div a img {
     font-size: 6vh;
   }
   .hero p,
-  main h2,
-  main section h3 {
+  main h2 {
     font-size: 3vh;
   }
   .descripcion p {
@@ -399,9 +396,6 @@ footer div a img {
   }
   .descripcion p {
     text-align: justify;
-  }
-  main section h3 {
-    font-size: 2.8vh;
   }
 }
 @media (max-width: 1100px) {
@@ -447,7 +441,7 @@ footer div a img {
 }
 @media (max-width: 850px) {
   .mensaje-colabora p {
-    font-size: 2vh;
+    font-size: 2.5vh;
     margin: 2vh 4vh;
     padding: 1.5vh 2vh;
   }
@@ -461,36 +455,38 @@ footer div a img {
   .donaciones h2 {
     font-size: 3vh;
   }
-  .donaciones p {
+  .donaciones p,
+  .donaciones ul {
     margin: 2vh;
+    text-align: center;
   }
 }
 @media (max-width: 900px) {
   footer {
     padding: 1vh 1.5vh;
   }
-  footer a img {
-    width: 2.2em;
-    padding: 1vh;
-  }
   footer p {
     font-size: 2vh;
     padding-top: 1vh;
     padding-left: 1vh;
+  }
+  footer a img {
+    width: 2.2em;
+    padding: 1vh;
   }
 }
 @media (max-width: 650px) {
   footer {
     padding: 0.7vh 1.2vh;
   }
-  footer a img {
-    width: 2em;
-    padding: 0.7vh;
-  }
   footer p {
     font-size: 2vh;
     padding-top: 0.7vh;
     padding-left: 0.7vh;
+  }
+  footer a img {
+    width: 2em;
+    padding: 0.7vh;
   }
 }
 

@@ -1,20 +1,35 @@
-//*variables
+//*Variables
 
-$color-principal: #7C5333;
-$color-secundario: black;
-$color-terciario: #161515fb;
-$color-text: rgb(85, 83, 83);
+$color-principal: rgb(124, 83, 51);
+$color-secundario: rgba(22, 21, 21, 0.984);
+$color-enlaces: rgb(255, 255, 255);
+$color-texto-notas: rgb(85, 83, 83);
+$color-bordes: rgb(180, 139, 98);
+$gradiente: linear-gradient(179deg, rgb(124, 83, 51) 0%, rgb(180, 139, 98) 50%, rgb(221, 177, 123) 100%);
 
 
-//*lista
-$font-weight:
-250,
-400,
-500;
 
-@mixin flex ($display, $align-items, $justify-content){
+//*Lista
+
+$font-weight: 250,
+    400,
+    500,
+    600,
+    700;
+
+//*Extend
+
+%texto-gral {
+    font-size: 2.5vh;
+    margin: 2.5vh 6vh;
+    padding: 2vh 4vh;
+    text-align: center;
+}
+
+//*Mixin
+
+@mixin flex ($display, $align-items, $justify-content) {
     display: $flex;
     align-items: $align;
     justify-content: $justify;
 }
-
