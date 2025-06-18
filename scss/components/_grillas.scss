@@ -45,18 +45,18 @@
 .card-body .btn-primary,
 .mb-3 .btn-primary {
     /*del inspeccionador (propiedades que estaba aplicando bootstrap al color del boton)*/
-    --bs-btn-color: $color-enlaces;
-    --bs-btn-bg: $color-principal;
-    --bs-btn-border-color: $color-principal;
-    --bs-btn-hover-color: $color-principal;
-    --bs-btn-hover-bg: $color-principal;
-    --bs-btn-hover-border-color: $color-principal;
+    --bs-btn-color: white;
+    --bs-btn-bg: #7C5333;
+    --bs-btn-border-color: #7C5333;
+    --bs-btn-hover-color: #7C5333;
+    --bs-btn-hover-bg: white;
+    --bs-btn-hover-border-color: #7C5333;
     --bs-btn-focus-shadow-rgb: 49, 132, 253;
-    --bs-btn-active-color: $color-enlaces;
-    --bs-btn-active-bg: $color-principal;
-    --bs-btn-active-border-color: $color-principal;
+    --bs-btn-active-color: white;
+    --bs-btn-active-bg: #7C5333;
+    --bs-btn-active-border-color: #7C5333;
     --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
-    --bs-btn-disabled-color: $color-enlaces;
-    --bs-btn-disabled-bg: $color-principal;
-    --bs-btn-disabled-border-color: $color-principal;
+    --bs-btn-disabled-color: white;
+    --bs-btn-disabled-bg: #7C5333;
+    --bs-btn-disabled-border-color: #7C5333;
 }

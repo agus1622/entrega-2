@@ -29,7 +29,7 @@ $font-weight: 250,
 //*Mixin
 
 @mixin flex ($display, $align-items, $justify-content) {
-    display: $flex;
-    align-items: $align;
-    justify-content: $justify;
+    display: $display;
+    align-items: $align-items;
+    justify-content: $justify-content;
 }

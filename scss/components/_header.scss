@@ -14,7 +14,7 @@ nav {
             }
         }
 
-        button {
+        .navbar-toggler {
             color: $color-enlaces;
             background-color: transparent;
             border: solid white 2px;
@@ -29,7 +29,7 @@ nav {
         div {
             ul {
                 li {
-                    a {
+                    .nav-link {
                         color: $color-enlaces;
                         font-size: 1.2rem;
                         font-weight: nth($font-weight, 1);
@@ -40,6 +40,7 @@ nav {
 
                         &:hover,
                         &:focus {
+                            color: $color-enlaces;
                             font-weight: nth($font-weight, 2);
                             text-shadow: 0 0 5px #fff, 0 0 10px #fff;
                         }

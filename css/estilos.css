@@ -1,4 +1,11 @@
 @charset "UTF-8";
+.mensaje-colabora p {
+  font-size: 2.5vh;
+  margin: 2.5vh 6vh;
+  padding: 2vh 4vh;
+  text-align: center;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -20,25 +27,25 @@ header {
   top: 0;
 }
 
-.navbar {
+nav {
   background: linear-gradient(179deg, rgb(124, 83, 51) 0%, rgb(180, 139, 98) 50%, rgb(221, 177, 123) 100%);
   padding: 1.5vh;
 }
-.navbar div a .img-logo {
+nav div a img {
   width: 4rem;
   border-radius: 50%;
 }
-.navbar div .navbar-toggler {
-  color: white;
+nav div .navbar-toggler {
+  color: rgb(255, 255, 255);
   background-color: transparent;
   border: solid white 2px;
   padding: 1vh;
 }
-.navbar div .navbar-toggler:focus {
+nav div .navbar-toggler:focus {
   border: solid white 2px;
 }
-.navbar div div ul li .nav-link {
-  color: white;
+nav div div ul li .nav-link {
+  color: rgb(255, 255, 255);
   font-size: 1.2rem;
   font-weight: 250;
   margin: 2vh;
@@ -46,7 +53,8 @@ header {
   padding: 1vh;
   transition: all 0.13s ease-in-out !important;
 }
-.navbar div div ul li .nav-link:hover, .navbar div div ul li .nav-link:focus {
+nav div div ul li .nav-link:hover, nav div div ul li .nav-link:focus {
+  color: rgb(255, 255, 255);
   font-weight: 400;
   text-shadow: 0 0 5px #fff, 0 0 10px #fff;
 }
@@ -58,12 +66,12 @@ header {
 
 .navbar-nav .nav-link.active,
 .navbar-nav .nav-link.show {
-  color: white --bs-navbar-active-color;
+  color: rgb(255, 255, 255) --bs-navbar-active-color;
   font-weight: 250;
 }
 
 h1 {
-  color: #7C5333;
+  color: rgb(124, 83, 51);
   text-align: center;
   font-size: 10vh;
   font-weight: 400;
@@ -72,7 +80,7 @@ h1 {
 
 .hero,
 h2 {
-  color: rgba(22, 21, 21, 0.9843137255);
+  color: rgba(22, 21, 21, 0.984);
   font-size: 4vh;
   font-weight: 500;
   text-align: center;
@@ -86,7 +94,7 @@ h2 {
 .descripcion p {
   border: solid rgb(180, 139, 98) 2px;
   border-radius: 12px;
-  color: rgba(22, 21, 21, 0.9843137255);
+  color: rgba(22, 21, 21, 0.984);
   font-size: 2.5vh;
   font-weight: 400;
   padding: 3%;
@@ -97,16 +105,17 @@ h2 {
 .mensual div,
 .campaña div,
 .historia div {
-  display: flex;
   width: 40%;
   text-align: justify;
   flex-direction: column;
+  display: flex;
   align-items: center;
+  justify-content: center;
 }
 .mensual div h3,
 .campaña div h3,
 .historia div h3 {
-  color: rgba(22, 21, 21, 0.9843137255);
+  color: rgba(22, 21, 21, 0.984);
   font-size: 4vh;
   font-weight: 500;
 }
@@ -123,7 +132,7 @@ h2 {
 .historia div a {
   font-weight: 700;
   font-size: 1.8vh;
-  color: #7C5333;
+  color: rgb(124, 83, 51);
   padding: 1vh;
   transition: all 0.3s ease;
 }
@@ -132,8 +141,8 @@ h2 {
 .historia div a:hover {
   font-weight: 700;
   font-size: 1.8vh;
-  color: white;
-  background-color: #7C5333;
+  color: rgb(255, 255, 255);
+  background-color: rgb(124, 83, 51);
   border-radius: 14px;
 }
 
@@ -148,9 +157,9 @@ h2 {
 
 .campaña {
   display: flex;
-  flex-direction: row-reverse;
   align-items: center;
   justify-content: center;
+  flex-direction: row-reverse;
   margin-bottom: 8%;
 }
 
@@ -162,19 +171,12 @@ h2 {
   margin: 3vh;
 }
 
-.mensaje-colabora p {
-  font-size: 2.5vh;
-  margin: 2.5vh 6vh;
-  padding: 2vh 4vh;
-  text-align: center;
-}
-
 .donaciones {
   text-align: center;
 }
 .donaciones h2 {
   font-size: 5vh;
-  color: #7C5333;
+  color: rgb(124, 83, 51);
 }
 .donaciones p {
   font-size: 2.5vh;
@@ -197,7 +199,7 @@ h2 {
 
 .card {
   position: relative;
-  border: solid #B48B62 1px;
+  border: solid rgb(180, 139, 98) 1px;
   width: 100%;
   max-width: 14rem;
 }
@@ -228,18 +230,18 @@ h2 {
 .card-body .btn-primary,
 .mb-3 .btn-primary {
   /*del inspeccionador (propiedades que estaba aplicando bootstrap al color del boton)*/
-  --bs-btn-color: #fff;
+  --bs-btn-color: white;
   --bs-btn-bg: #7C5333;
   --bs-btn-border-color: #7C5333;
   --bs-btn-hover-color: #7C5333;
-  --bs-btn-hover-bg: ##7C5333;
+  --bs-btn-hover-bg: white;
   --bs-btn-hover-border-color: #7C5333;
   --bs-btn-focus-shadow-rgb: 49, 132, 253;
-  --bs-btn-active-color: #fff;
+  --bs-btn-active-color: white;
   --bs-btn-active-bg: #7C5333;
   --bs-btn-active-border-color: #7C5333;
   --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
-  --bs-btn-disabled-color: #fff;
+  --bs-btn-disabled-color: white;
   --bs-btn-disabled-bg: #7C5333;
   --bs-btn-disabled-border-color: #7C5333;
 }
@@ -254,10 +256,10 @@ h2 {
   max-width: 450px;
   margin: 50px auto;
   padding: 20px;
-  background-color: white;
-  border: solid #7C5333 1px;
+  background-color: rgb(255, 255, 255);
+  border: solid rgb(124, 83, 51) 1px;
   border-radius: 10px;
-  box-shadow: 0 4px 10px #7C5333;
+  box-shadow: 0 4px 10px rgb(124, 83, 51);
 }
 .formularios .was-validated .btn {
   display: block;
@@ -295,22 +297,22 @@ h2 {
 
 .form-check-input.is-invalid,
 .was-validated .form-check-input:invalid {
-  border-color: rgba(22, 21, 21, 0.9843137255);
+  border-color: rgba(22, 21, 21, 0.984);
 }
 
 .form-check-input.is-invalid ~ .form-check-label,
 .was-validated .form-check-input:invalid ~ .form-check-label {
-  color: #7C5333;
+  color: rgb(124, 83, 51);
 }
 
 .form-control.is-invalid,
 .was-validated .form-control:invalid {
-  border-color: #7C5333;
+  border-color: rgb(124, 83, 51);
 }
 
 .form-control.is-invalid:focus,
 .was-validated .form-control:invalid:focus {
-  border-color: #7C5333;
+  border-color: rgb(124, 83, 51);
   box-shadow: none;
 }
 
@@ -320,15 +322,16 @@ h2 {
 }
 
 footer {
-  background: #7C5333;
+  background: rgb(124, 83, 51);
   background: linear-gradient(179deg, rgb(124, 83, 51) 0%, rgb(180, 139, 98) 50%, rgb(221, 177, 123) 100%);
   display: flex;
-  flex-direction: column;
   align-items: center;
+  justify-content: start;
+  flex-direction: column;
   padding: 2vh 3vh;
 }
 footer p {
-  color: white;
+  color: rgb(255, 255, 255);
   font-size: 2.5vh;
   font-weight: 600;
   padding-top: 2vh;
@@ -396,6 +399,10 @@ footer div a img {
   }
   .descripcion p {
     text-align: justify;
+  }
+  .campaña div h3, .historia div h3, .mensual div h3 {
+    text-align: center;
+    font-size: 3vh;
   }
 }
 @media (max-width: 1100px) {
