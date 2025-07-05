@@ -66,7 +66,7 @@ nav div div ul li .nav-link:hover, nav div div ul li .nav-link:focus {
 
 .navbar-nav .nav-link.active,
 .navbar-nav .nav-link.show {
-  color: rgb(255, 255, 255) --bs-navbar-active-color;
+  color: rgb(255, 255, 255);
   font-weight: 250;
 }
 

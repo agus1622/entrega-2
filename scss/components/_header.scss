@@ -60,8 +60,6 @@ nav {
 
 .navbar-nav .nav-link.active,
 .navbar-nav .nav-link.show {
-    color: $color-enlaces (
-        --bs-navbar-active-color
-    );
-font-weight: nth($font-weight, 1);
+    color: $color-enlaces;
+    font-weight: nth($font-weight, 1);
 }
